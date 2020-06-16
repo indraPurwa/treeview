@@ -35,7 +35,7 @@
                      nodes: [
                            ";
                            foreach ($desa as $key3 => $value3) {
-                              echo "{text: '$value3[nama]'},";
+                              echo "{text: '$value3[nama]',enableLinks:true,href: 'https://www.google.com'},";
                            }
                   echo "
                      ]
@@ -48,7 +48,8 @@
    $('#treeview2').treeview({
       levels: 1,
       showTags: true,
-      data: defaultData
+      data: defaultData,
+      enableLinks: true
    });
 </script>
 </body>
